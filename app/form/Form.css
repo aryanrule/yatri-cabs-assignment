@@ -1,0 +1,46 @@
+.form-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: clamp(15px, 4vw, 40px);
+}
+
+.form {
+  width: 100%;
+  max-width: 320px; /* reduced from 400px */
+
+  display: flex;
+  flex-direction: column;
+  gap: clamp(8px, 1.5vw, 14px);
+
+  padding: clamp(15px, 3vw, 25px);
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.form h2 {
+  text-align: center;
+  font-size: clamp(18px, 2.5vw, 22px);
+}
+
+/* Inputs */
+.form input,
+.form textarea {
+  padding: clamp(6px, 1.2vw, 10px);
+  font-size: clamp(13px, 1.3vw, 14px);
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+
+/* Button */
+.form button {
+  padding: clamp(8px, 1.5vw, 10px);
+  font-size: clamp(13px, 1.3vw, 14px);
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
