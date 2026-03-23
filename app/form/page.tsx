@@ -24,36 +24,17 @@ const Form = () => {
 
   return (
     <section className="form-section">
-      <form className="form" onSubmit={handleSubmit}>
-        
-        <h2>Contact Us</h2>
+       <form className="small-form">
+  <h3>Test Form</h3>
 
-        <input
-          type="text"
-          name="name"
-          placeholder="Your Name"
-          value={formData.name}
-          onChange={handleChange}
-        />
+  <label htmlFor="name">Name</label>
+  <input type="text" id="name" name="name" placeholder="Name" className="small-input" />
 
-        <input
-          type="email"
-          name="email"
-          placeholder="Your Email"
-          value={formData.email}
-          onChange={handleChange}
-        />
+  <label htmlFor="email">Email</label>
+  <input type="email" id="email" name="email" placeholder="Email" className="small-input" />
 
-        <textarea
-          name="message"
-          placeholder="Your Message"
-          value={formData.message}
-          onChange={handleChange}
-        />
-
-        <button type="submit">Send Message</button>
-
-      </form>
+  <button type="submit" className="small-button">Submit</button>
+</form>
     </section>
   )
 }
