@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Navbar from "./navbar/page";
 import Hero from "./hero/page";
+import Form from "./form/page";
 
 export default function Home() {
   return (

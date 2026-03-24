@@ -142,43 +142,36 @@ const Hero = () => {
           </div>
 
           <div className="hero-right">
-            <div className="form-box">
-              <form className="cab-form">
-                <input type="text" placeholder="Pickup Location" />
-                <input type="text" placeholder="Drop Location" />
-                <input type="date" />
-                <button>SEARCH CABS</button>
-              </form>
-            </div>
+            <Form />
           </div>
         </div>
       </div>
 
-       <div className="transparent-billing">
-  
-  <div className="billing-item">
-    <h1 className="billing-title">Transparent Billing</h1>
-    <p className="billing-text">GPS Based Billing | No Km Tampering</p>
-  </div>
+      <div className="billing-container">
+        <div className="billing-block">
+          <h1 className="billing-heading">Transparent Billing</h1>
+          <p className="billing-subtext">GPS Based Billing | No Km Tampering</p>
+        </div>
 
-  <div className="line-sep"></div>
+        <div className="billing-divider"></div>
 
-  <div className="billing-item">
-    <h1 className="billing-title">Download Now !</h1>
-    <div className="store-icons">
-      <img src="/google_play.png" alt="google" />
-      <img src="/apple_store.png" alt="apple" />
-    </div>
-  </div>
+        <div className="billing-block">
+          <h1 className="billing-heading">Download Now!</h1>
+          <div className="billing-icons">
+            <img src="/google_play.png" alt="google" />
+            <img src="/apple_store.png" alt="apple" />
+          </div>
+        </div>
 
-  <div className="line-sep"></div>
+        <div className="billing-divider"></div>
 
-  <div className="billing-item">
-    <h1 className="billing-title">No Return Fare</h1>
-    <p className="billing-text">Pay only one way | No hidden charges</p>
-  </div>
-
-</div>
+        <div className="billing-block">
+          <h1 className="billing-heading">No Return Fare</h1>
+          <p className="billing-subtext">
+            Pay only one way | No hidden charges
+          </p>
+        </div>
+      </div>
 
       <div className="testimonials-cards">
         <div className="test-cards">
@@ -444,7 +437,62 @@ const Hero = () => {
         <p className="car-rental-heading">Why Choose Yatri Car Rental?</p>
       </div>
 
-      <div className="benefits-section"></div>
+      <div className="benefits-section">
+        <div className="benefits-list">
+          {/* Main Intro */}
+          <p className="benefit-para">
+            Yatri Car Rental has been a trusted digital platform for booking
+            local and outstation car rental and taxi services since 2014. Our
+            primary goal is to offer our clients an exceptional car rental and
+            cab booking experience. We take pride in our commitment to safety,
+            reliability, and experienced drivers, making us a preferred choice
+            across India.
+          </p>
+
+          {/* Para 1 */}
+          <p className="benefit-para">
+            <span className="benefit-title">Service You Can Trust - </span>
+            At Yatri Car Rental, we are dedicated to providing dependable
+            services in India. We ensure that bookings are never cancelled
+            without prior notice, and our vehicles are well-maintained for a
+            seamless journey.
+          </p>
+
+          {/* Para 2 */}
+          <p className="benefit-para">
+            <span className="benefit-title">Safety is Our Priority - </span>
+            Safety and comfort are paramount. We hire experienced drivers with
+            deep knowledge of routes and traffic regulations, ensuring a smooth
+            and safe ride for all passengers.
+          </p>
+
+          {/* Para 3 */}
+          <p className="benefit-para">
+            <span className="benefit-title">
+              Expert Chauffeurs at Your Service -{" "}
+            </span>
+            We select only skilled, knowledgeable, and courteous drivers to
+            enhance your overall travel experience and satisfaction.
+          </p>
+
+          {/* Para 4 */}
+          <p className="benefit-para">
+            <span className="benefit-title">
+              Extensive Industry Experience -{" "}
+            </span>
+            With over 10 years of industry expertise, Yatri Car Rental is your
+            trusted choice for premium car hire services.
+          </p>
+
+          {/* Para 5 */}
+          <p className="benefit-para">
+            <span className="benefit-title">Proven Track Record - </span>
+            We emphasize transparency in billing and consistently deliver a
+            seamless experience. Our strong Google ratings (4.8★+) reflect our
+            commitment to customer satisfaction.
+          </p>
+        </div>
+      </div>
 
       <div className="customer_testimonial">
         {/* HEADING */}
@@ -509,10 +557,8 @@ const Hero = () => {
           </div>
         </div>
 
-        {/* Separator */}
         <div className="separator-line"></div>
 
-        {/* Driver Section */}
         <div className="driver-section">
           <h1 className="driver-title">
             Become a <span className="driver">Driver</span> Partner
@@ -530,7 +576,7 @@ const Hero = () => {
         <span className="cities-label">Operational Cities:</span>
         <span className="city">Lucknow</span>
         <span className="city">Ayodhya</span>
-        <span className="city">Varanasi</span> {/* you can add more cities */}
+        <span className="city">Varanasi</span> 
         <span className="city">Gorakhpur</span>
         <span className="city">Varanasi</span>
         <span className="city">Allahbad(Prayagraj)</span>
@@ -538,12 +584,10 @@ const Hero = () => {
       </div>
 
       <footer className="footer">
-        {/* Row 1: Logo */}
         <div className="footer-logo">
           <img src="/yatri.svg" alt="Yatri Cabs Logo" />
         </div>
 
-        {/* Row 2: Navigation Links */}
         <div className="footer-nav">
           <ul className="footer-links">
             <li>Home</li>
@@ -556,7 +600,6 @@ const Hero = () => {
           </ul>
         </div>
 
-        {/* Row 3: Copyright */}
         <div className="footer-copy">
           <h4>All Copyrights are reserved by YATRI CABS</h4>
         </div>
