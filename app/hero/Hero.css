@@ -119,6 +119,13 @@
     text-align: center;
     padding: 20px;
   }
+  
+.hero-heading span {
+  font-weight: 600;
+  color: #45D203;
+  display: none;
+}
+  
 
   .hero-left {
     max-width: 100%;
